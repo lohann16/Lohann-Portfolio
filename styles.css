@@ -237,3 +237,33 @@
     0%, 100% { opacity: 1; }
     50% { opacity: 0.4; }
   }
+  /* SECTION COMMONS */
+  section { padding: 5rem 3rem; }
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 18px; height: 1px;
+    background: var(--accent);
+  }
+  h2 {
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+    color: var(--text);
+  }
+
+  /* DIVIDER */
+  .divider { border: none; border-top: 1px solid var(--border); margin: 0 3rem; }
