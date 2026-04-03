@@ -329,13 +329,50 @@
 
     <h2>Get In Touch</h2>
     <p>Open to junior & intermediate roles — full-time, contract, and remote. Bilingual in English and French, based in Johannesburg.</p>
-    <div class="contact-links">
-      <a href="mailto:lodoualla@gmail.com" class="contact-link">✉ lodoualla@gmail.com</a>
-      <a href="https://www.linkedin.com/in/daniel-lohann-doualla-ekwe-861ba619b/" target="_blank" class="contact-link">in LinkedIn</a>
-      <a href="https://github.com/lohann16" target="_blank" class="contact-link">⌥ github.com/lohann16</a>
-      <a href="tel:+27658794376" class="contact-link">✆ +27 65 879 4376</a>
+
+    <div class="contact-grid">
+      <form id="contact-form" class="contact-form">
+        <input
+          type="text"
+          name="user_name"
+          placeholder="Your Name"
+          required
+          class="form-input"
+        />
+        <input
+          type="email"
+          name="user_email"
+          placeholder="Your Email"
+          required
+          class="form-input"
+        />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+          class="form-textarea"
+        ></textarea>
+        <button
+          type="submit"
+          class="btn btn-primary form-submit"
+        >
+          Send Message
+        </button>
+        <div id="form-message" class="form-message hidden">
+          Message sent successfully! I'll get back to you soon.
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <div class="contact-links">
+          <a href="mailto:lodoualla@gmail.com" class="contact-link">✉ lodoualla@gmail.com</a>
+          <a href="https://www.linkedin.com/in/daniel-lohann-doualla-ekwe-861ba619b/" target="_blank" class="contact-link">in LinkedIn</a>
+          <a href="https://github.com/lohann16" target="_blank" class="contact-link">⌥ github.com/lohann16</a>
+          <a href="tel:+27658794376" class="contact-link">✆ +27 65 879 4376</a>
+        </div>
+      </div>
     </div>
-    <a href="mailto:lodoualla@gmail.com" class="btn btn-primary" style="font-size:13px; padding: 1rem 2.5rem;">Start a conversation →</a>
   </div>
 </section>
 
@@ -343,6 +380,8 @@
   <p>© 2025 Daniel Lohann Doualla Ekwe — Johannesburg, South Africa</p>
 </footer>
 <script src="scripts.js"></script>
+<script src="email.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
 </body>
 
 </html>
