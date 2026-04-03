@@ -432,3 +432,70 @@
     background: rgba(108,143,255,0.08);
     border-radius: 3px;
   }
+  /* EDUCATION & CERTS */
+  .edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  .edu-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.75rem;
+  }
+  .edu-period {
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+  .edu-title {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+  .edu-inst { font-size: 12px; color: var(--muted); }
+
+  .cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .cert-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  .cert-icon {
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  .cert-icon.done { background: rgba(78,245,176,0.12); }
+  .cert-icon.progress { background: rgba(108,143,255,0.12); }
+  .cert-icon.planned { background: rgba(107,114,128,0.15); }
+  .cert-info { }
+  .cert-name { font-size: 12px; color: var(--text); }
+  .cert-provider { font-size: 11px; color: var(--muted); }
+  .cert-status {
+    margin-left: auto;
+    font-size: 10px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .cert-status.done { color: var(--accent); background: rgba(78,245,176,0.1); }
+  .cert-status.progress { color: var(--accent2); background: rgba(108,143,255,0.1); }
+  .cert-status.planned { color: var(--muted); background: var(--surface2); }
