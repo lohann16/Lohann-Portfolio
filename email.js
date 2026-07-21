@@ -1,6 +1,6 @@
-// Initialize EmailJS
+
 (function() {
-  emailjs.init("TRaPw2tLKLE-JXszH"); // Replace with your actual public key
+  emailjs.init("4D1kDTSxdBJN54jHI"); // Replace with your actual public key
 })();
 
 const form = document.getElementById("contact-form");
@@ -9,7 +9,7 @@ const message = document.getElementById("form-message");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  emailjs.sendForm("service_gg7l28a", "template_dh2f02d", this)
+  emailjs.sendForm("service_ykxzbai","template_0xlhcco", this)
     .then(() => {
       message.classList.remove("hidden");
       form.reset();
