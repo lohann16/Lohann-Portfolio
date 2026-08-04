@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Lohann Doualla Ekwe — Software Engineer</title>
+    <meta name="description" content="Daniel Lohann Doualla Ekwe — Software Engineer & Business Analyst based in Johannesburg, South Africa. Full stack development, data analytics, and business intelligence.">
+    <meta property="og:title" content="Daniel Lohann Doualla Ekwe — Software Engineer">
+    <meta property="og:description" content="Software Engineer & Business Analyst based in Johannesburg, South Africa. Building technology solutions that bridge software, data, and business.">
+    <meta property="og:type" content="website">
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
-    
+
+
 </head>
 <body>
     <!-- NAV -->
 <nav>
   <div class="nav-logo">D<span>.</span>Lohann</div>
-  <ul class="nav-links">
+  <ul class="nav-links" id="nav-links">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
     <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
- 
+
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-left">
@@ -45,6 +55,7 @@ Building technology solutions that bridge software, data, and business — with 
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">View Projects</a>
       <a href="mailto:lodoualla@gmail.com" class="btn btn-ghost">Get in Touch</a>
+      <a href="Daniel Lohann Software Engineer Cv.pdf" download class="btn btn-ghost">↓ Resume</a>
     </div>
   </div>
 
@@ -149,7 +160,7 @@ Building technology solutions that bridge software, data, and business — with 
         <span class="chip">Version Control</span>
         <span class="chip">Business Analysis</span>
         <span class="chip">Data Analytics</span>
-        
+
       </div>
     </div>
   </div>
@@ -194,7 +205,7 @@ Building technology solutions that bridge software, data, and business — with 
   </div>
 </div>
 
-    
+
 
     <div class="exp-item fade-in">
   <div class="exp-meta">
@@ -230,6 +241,7 @@ Building technology solutions that bridge software, data, and business — with 
         <div class="project-name">SkillSwap Platform</div>
         <a href="https://github.com/lohann16/skillsswap" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
       </div>
+      <div class="project-image placeholder">Screenshot coming soon</div>
       <p class="project-desc">
         A full-stack peer-to-peer learning platform enabling users to exchange skills through a collaborative, community-driven system.
       </p>
@@ -254,6 +266,7 @@ Building technology solutions that bridge software, data, and business — with 
         <div class="project-name">AI Mental Health Chatbot</div>
         <a href="https://github.com/lohann16/AiChatbot" target="_blank" class="project-link">↗ GitHub</a>
       </div>
+      <div class="project-image placeholder">Screenshot coming soon</div>
       <p class="project-desc">
         A culturally localized AI-powered chatbot designed to support emotional wellness and provide context-aware guidance for South African users.
       </p>
@@ -276,7 +289,9 @@ Building technology solutions that bridge software, data, and business — with 
     <div class="project-name">TikarPro</div>
     <a href="https://tikarpro.com/" target="_blank" class="project-link">↗ Link</a>
   </div>
-
+  <div class="project-image">
+    <img src="images/tikarpro-screenshot.png" alt="TikarPro homepage showing player profiles and football agency branding" loading="lazy">
+  </div>
   <p class="project-desc">
     A professional digital platform for a football agency, designed to showcase talent, connect players with opportunities, and strengthen the agency's online presence.
   </p>
@@ -301,6 +316,7 @@ Building technology solutions that bridge software, data, and business — with 
         <div class="project-name">Lesora Creative</div>
         <a href="#" target="_blank" class="project-link">↗ Link</a>
       </div>
+      <div class="project-image placeholder">Screenshot coming soon</div>
       <p class="project-desc">
         A premium branding and marketing studio website designed to feel elegant, modern, and memorable — built to position the agency as a boutique creative studio with strong visual identity.
       </p>
@@ -319,6 +335,43 @@ Building technology solutions that bridge software, data, and business — with 
         <span class="stack-tag">Resend</span>
       </div>
     </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label">What people say</div>
+  <h2>Testimonials</h2>
+  <div class="testimonial-grid">
+
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-quote">
+        Placeholder — swap in a real quote from a manager, mentor, or teammate at She Leads about your work ethic or a specific contribution.
+      </div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">?</div>
+        <div>
+          <div class="testimonial-name">Name Surname</div>
+          <div class="testimonial-role">Role · She Leads</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card fade-in">
+      <div class="testimonial-quote">
+        Placeholder — a second quote, ideally from someone in a different context, such as a client from TikarPro or a lecturer from UJ, for variety.
+      </div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">?</div>
+        <div>
+          <div class="testimonial-name">Name Surname</div>
+          <div class="testimonial-role">Role · Company</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -353,7 +406,7 @@ Building technology solutions that bridge software, data, and business — with 
       </div>
       <span class="cert-status done">Completed</span>
     </div>
-    
+  </div>
 </section>
 <hr class="divider">
 
@@ -364,6 +417,7 @@ Building technology solutions that bridge software, data, and business — with 
 
     <h2>Get In Touch</h2>
     <p>Open to junior & intermediate roles — full-time, contract, and remote. Bilingual in English and French, based in Johannesburg.</p>
+    <a href="Daniel Lohann Software Engineer Cv.pdf" download class="btn btn-primary resume-cta">↓ Download Resume (PDF)</a>
 
     <div class="contact-grid">
       <form id="contact-form" class="contact-form">
@@ -418,6 +472,28 @@ Building technology solutions that bridge software, data, and business — with 
 <script src="scripts.js"></script>
 <script src="email.js"> </script>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
+<script>
+  // Mobile nav toggle
+  (function () {
+    var toggle = document.getElementById('nav-toggle');
+    var links = document.getElementById('nav-links');
+    if (!toggle || !links) return;
+
+    toggle.addEventListener('click', function () {
+      var isOpen = links.classList.toggle('open');
+      toggle.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    links.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        links.classList.remove('open');
+        toggle.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
 </body>
 
 </html>
