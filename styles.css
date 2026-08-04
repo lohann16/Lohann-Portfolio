@@ -397,6 +397,28 @@
   }
   .project-link:hover { border-color: var(--accent); color: var(--accent); }
   .project-desc { font-size: 13px; color: var(--muted); line-height: 1.8; }
+  .project-image {
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 180px;
+    background: linear-gradient(135deg, rgba(78,245,176,0.08), rgba(108,143,255,0.08));
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 1rem;
+  }
+  .project-image.placeholder {
+    border: 1px dashed rgba(107,114,128,0.5);
+  }
+  .project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
   .project-bullets {
     list-style: none;
     display: flex;
