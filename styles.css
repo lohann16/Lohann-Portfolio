@@ -432,6 +432,53 @@
     background: rgba(108,143,255,0.08);
     border-radius: 3px;
   }
+  /* TESTIMONIALS */
+  #testimonials { background: var(--surface); }
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  .testimonial-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .testimonial-quote {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .testimonial-author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: auto;
+  }
+  .testimonial-avatar {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(78,245,176,0.12);
+    color: var(--accent);
+    font-weight: 700;
+    font-family: var(--font-head);
+  }
+  .testimonial-name {
+    font-family: var(--font-head);
+    font-weight: 700;
+    color: var(--text);
+  }
+  .testimonial-role {
+    font-size: 12px;
+    color: var(--muted);
+  }
   /* EDUCATION & CERTS */
   .edu-grid {
     display: grid;
