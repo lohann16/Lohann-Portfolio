@@ -146,6 +146,34 @@
         <span class="stack-tag">Vercel</span>
       </div>
     </div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3 class="project-name">TacticalEye</h3>
+        <a href="https://github.com/lohann16/tactical-eye" target="_blank" class="project-link"><span aria-hidden="true">↗</span> GitHub</a>
+      </div>
+      <div class="project-image">
+        <img src="images/TacticalEye.jpeg" alt="TacticalEye dashboard showing formation timeline and pitch-control heatmap" loading="lazy">
+      </div>
+      <p class="project-desc">
+        A web app that turns match video or event data into automated football tactical analysis — formation detection, space-control heatmaps, and pattern flags — without the cost of enterprise tracking systems.
+      </p>
+      <ul class="project-bullets">
+        <li>Architected an end-to-end pipeline: video/data ingestion → CV-based player tracking → formation and pitch-control analysis → dashboard visualization</li>
+        <li>Designed rule-based tactical pattern flagging (overlapping runs, press triggers, space exploited behind fullbacks) with explainable, confidence-scored output</li>
+        <li>Built a formation-change timeline and Voronoi-based pitch-control heatmaps to visualize space control per match phase</li>
+        <li>Planned an asynchronous processing architecture (queued CV/analysis workers) to keep uploads and long-running video processing decoupled from the API</li>
+      </ul>
+      <div class="project-stack">
+        <span class="stack-tag">React</span>
+        <span class="stack-tag">TypeScript</span>
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">FastAPI</span>
+        <span class="stack-tag">OpenCV</span>
+        <span class="stack-tag">YOLOv8</span>
+        <span class="stack-tag">PostgreSQL</span>
+      </div>
+    </div>
   </div>
 </section>
 
