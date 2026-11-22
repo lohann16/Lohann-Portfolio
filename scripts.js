@@ -1,4 +1,36 @@
 // Fade in on scroll
+  const themeToggle = document.querySelector('[data-theme-toggle]');
+  if (themeToggle) {
+    const themeLabel = themeToggle.querySelector('.theme-toggle-label');
+
+    function setTheme(theme, persist) {
+      document.documentElement.setAttribute('data-theme', theme);
+      themeToggle.setAttribute('aria-label', `Switch to ${theme === 'light' ? 'dark' : 'light'} theme`);
+      themeLabel.textContent = theme === 'light' ? 'Dark' : 'Light';
+
+      if (persist) {
+        try {
+          localStorage.setItem('site-theme', theme);
+        } catch (error) {
+          console.warn('Theme preference could not be saved.', error);
+        }
+      }
+    }
+
+    setTheme(document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark', false);
+
+    themeToggle.addEventListener('click', () => {
+      const nextTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      setTheme(nextTheme, true);
+    });
+
+    window.addEventListener('storage', event => {
+      if (event.key === 'site-theme' && (event.newValue === 'light' || event.newValue === 'dark')) {
+        setTheme(event.newValue, false);
+      }
+    });
+  }
+
   const els = document.querySelectorAll('.fade-in');
   const obs = new IntersectionObserver(entries => {
     entries.forEach((e, i) => {
